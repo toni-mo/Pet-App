@@ -1,0 +1,19 @@
+<div class="pull-left">
+	<div class="paw pg-logo" ng-click="showSidebar()"></div>
+	<div class="protection" ng-click="displayMenu=false" ng-show="displayMenu">
+	</div>
+	<div class="sidebar" ng-class="{'on': displayMenu}">
+		<div class="menu-header">
+			<h3 class="menu-title">Menu <i class="close-btn pull-right" ng-click="displayMenu=false">&times;</i></h3>
+		</div>
+		<div class="menu-body">
+			<ul class="list-unstyled">
+				<li ng-class="{'active-item': route.current.activetab == 'cats'}"><a href="#cats" ng-click="displayMenu = false">Cats</a></li>
+				<li ng-class="{'active-item': route.current.activetab == 'dogs'}"><a href="#dogs" ng-click="displayMenu = false">Dogs</a></li>
+				<li ng-class="{'active-item': route.current.activetab == 'horses'}"><a href="#horses" ng-click="displayMenu = false">Horses</a></li>
+				<li ng-class="{'active-item': route.current.activetab == 'contact'}"><a href="#contact" ng-click="displayMenu = false">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu-footer"></div>
+	</div>
+</div> 

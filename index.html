@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="petApp">
+<head>
+	<title>Pet Application</title>
+	<!-- Bootstrap Css -->
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<!-- Flat icons -->
+	<link rel="stylesheet" type="text/css" href="icons/font/flaticon.css">
+	<!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="css/petAppStyles.css">
+</head>
+<body ng-controller="MainController">
+	<!-- .container -->
+	<div class="container">
+		<!-- Header -->
+		<!-- .row -->
+		<div class="row">
+			<!-- .col-md-12 -->
+			<div class="col-md-offset-2 col-md-8 pg-header">
+				<!-- Logo -->
+				<div class="row">
+					<div class="col-md-12">
+						<side-bar></side-bar>
+						<h1  class="pg-title">Pets</h1>
+					</div>
+				</div>
+				<!-- /Logo -->
+				<!-- Navigation -->
+				<div class="row">
+					<div class="col-md-3 nav-tab" ng-class="{active: route.current.activetab == 'cats'}">
+						<a href="#cats"><h3><i class="flaticon-cat"></i> Cats</h3></a>
+					</div>
+					<div class="col-md-3 nav-tab" ng-class="{active: route.current.activetab == 'dogs'}">
+						<a href="#dogs"><h3><i class="flaticon-dog"></i> Dogs</h3></a>
+					</div>
+					<div class="col-md-3 nav-tab" ng-class="{active: route.current.activetab == 'horses'}">
+						<a href="#horses"><h3><i class="flaticon-horse"></i> Horses</h3></a>
+					</div>
+					<div class="col-md-3 nav-tab" ng-class="{active: route.current.activetab == 'contact'}">
+						<a href="#contact"><h3><i class="flaticon-mail"></i> Contact Us</h3></a>
+					</div>
+				</div>
+				<!-- /Navigation -->
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+		<!-- /Header -->
+
+		<!-- Content (ng-view) -->
+		<!-- .row -->
+		<div class="row">
+			<!-- .col-md-12 -->
+			<div class="col-md-offset-2 col-md-8 content" ng-view></div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+		<!-- /Content -->
+
+		<!-- Footer -->
+		<div class="row">
+			<!-- .col-md-12 -->
+			<div class="col-md-offset-2 col-md-8 pg-footer">
+				<modal-window class="pull-right"></modal-window>
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+		<!-- /Footer -->
+	</div><!-- /.container -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<!-- Angular JS -->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<!-- Custom Angular Script -->
+<script type="text/javascript" src="js/petApplication.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
+</body>
+</html>
