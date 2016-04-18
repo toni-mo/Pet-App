@@ -10,11 +10,11 @@ Because Chrome doesn't support cross-origin requests without web-server
 1. Angular JS
 2. Twitter Bootstrap
 
-###Angular modules used
+###Angular modules used:
 ***********************
 1. angular-route
 2. angular-animate
 
-###Additional libraries
+###Additional libraries:
 ***********************
 1. Flaticon.css
